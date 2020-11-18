@@ -3,19 +3,76 @@
 <head>
   <title>마쿠의 커맨드 저장소</title>
   <meta charset="utf-8">
+  <style>
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  </style>
 </head>
 <body>
-  <h1>여기는 마쿠의 커맨드 저장소입니다</h1>
-  <h2>유튜브 주소:<a href="https://www.youtube.com/channel/UCh0bqb7vhhzTycvy7hrmcsg?view_as=subscriber" target="_blank">https://www.youtube.com/channel/UC...</a></h2>
-  <img with="100%" src="https://lh3.googleusercontent.com/a-/AOh14GiBunumFi4qy_sFEVRq9FMVTdg274_Z1c0Mk04dcw=s360-c">
-  <p>
+  <h1>여기는 <font color="aqua">마쿠</font>의 커맨드 저장소입니다</h1>
+  <h2>유튜브 주소:<a href="https://www.youtube.com/channel/UCh0bqb7vhhzTycvy7hrmcsg?view_as=subscriber" target="_blank" style="text-decoration:underline"><font color="purple">https://www.youtube.com/channel/UC...</font></a></h2>
+  <img with="100%" src="https://lh3.googleusercontent.com/a-/AOh14GiBunumFi4qy_sFEVRq9FMVTdg274_Z1c0Mk04dcw=s360-c"><p>
+  </p>
     <h3><li><a href="1.html">간편 명령어</a></li>
     <li><a href="5.html">간편 단축기</a></li>
     <li><a href="2.html">scoreboard</a></li>
     <li><a href="3.html">execute</a></li>
     <li><a href="4.html">execute 응용</a></li></h3>
   </p>
-  <br><br><br><br><br><h2>간편 명령어</h2>
-
+  <br><br><br><br><br><strong><h1>간편 명령어</h1></strong>
+  <h2>gamemode</h2>
+  /gamemode survival-게임 모드를 서바이벌로 만든다<br>
+  /gamemode adventure-게임 모드를 모험으로 만든다<br>
+  /gamemode creative-게임 모드를 크리에이티브로 만든다<br>
+  /gamemode spectator-게임 모드를 관전으로 만든다<br>
+  <h2>gamerule</h2>
+  /gamerule keepInventory true-죽음 후 보관함 보존 켜기<br>
+  /gamerule keepInventory false-죽음 후 보관함 보존 끄기<br>
+  /gamerule doFireTick true-불 갱신 켜기<br>
+  /gamerule doFireTick false-불 갱신 끄기<br>
+  /gamerule doWeatherCycle true-날씨 갱신 켜기<br>
+  /gamerule doWeatherCycle false-날씨 갱신 끄기<br>
+  /gamerule doDaylightCycle true-게임 속 시간 진행 켜기<br>
+  /gamerule doDaylightCycle false-게임 속 시간 진행 끄기<br>
+  /gamerule randomTickSpeed <숫자>-랜덤 틱 속도 비율<br>
+  /gamerule commandBlockOutput true-명령 블럭 출력 알림 켜기<br>
+  /gamerule commandBlockOutput false-명령 블럭 출력 알림 끄기<br>
+  /gamerule doTileDrops true-블럭 떨굼 켜기<br>
+  /gamerule doTileDrops false-블럭 떨굼 끄기<br>
+  /gamerule doEntityDrops true-개체 장비 떨굼 켜기<br>
+  /gamerule doEntityDrops false-개체 장비 떨굼 끄기<br>
+  /gamerule doMobLoot true-몹 노획물 떨굼 켜기(예 경험치 등''')<br>
+  /gamerule doMobLoot false-몹 노획물 떨굼 켜기(예 경험치 등''')<br>
+  /gamerule doMobSpawning true-몹 생성 켜기<br>
+  /gamerule doMobSpawning false-몹 생성 끄기<br>
+  /gamerule doImmediateRespawn true-즉시 리스폰 켜기<br>
+  /gamerule doImmediateRespawn false-즉시 리스폰 끄기<br>
+  /gamerule drowningDamage true-익사 피해 켜기<br>
+  /gamerule drowningDamage false-익사 피해 끄기<br>
+  /gamerule fallDamage true-낙하 피해 켜기<br>
+  /gamerule fallDamage false-낙하 피해 끄기<br>
+  /gamerule fireDamage true-불 피해 켜기<br>
+  /gamerule fireDamage false-불 피해 끄기<br>
+  /gamerule mobGriefing true-파괴적 몸 행위 켜기(예 크리퍼 폭발 방지 등''')<br>
+  /gamerule mobGriefing false-파괴적 몸 행위 끄기(예 크리퍼 폭발 방지 등''')<br>
+  등'''
+  <h2>fill</h2>
+  /fill x y z x y z minecraft:블럭 이름-특정 좌표 안을 블록으로 채운다<br>
+  /fill x y z x y z minecraft:블럭 이름 destroy-특정 좌표 안을 블록을 부수고 그 블록으로 채운다(아이템도 떨어짐)<br>
+  /fill x y z x y z minecraft:블럭 이름 hollow-특정 좌표 안에 있는 다른 블록을 그 블록으로 만든다<br>
+  /fill x y z x y z minecraft:블럭 이름 keep-특정 좌표 안에 있는 다른 블록을 그대로 보존하고 빈 공간을 그 블록으로 채운다<br>
+  /fill x y z x y z minecraft:블럭 이름 outline-특정 좌표 안에 있는 바깥 부분을 그 블록으로 채운다<br>
+  /fill x y z x y z minecraft:블럭 이름 replace 바꿀 블럭-특정 좌표 안에 있는 바꿀 블록을 그 블록으로 바꾼다<br>
+  <h2>clone</h2>
+  /clone x y z x y z x y z-특정 좌표 안에 있는 블록을 특정 좌표에 복사한다<br>
+  /clone x y z x y z x y z filtered minecraft:블럭 normal-특정 좌표 안에 있는 특정 블록을 특정 좌표에 복사한다<br>
+  등'''
+  <h2>clear</h2>
+  /clear <대상>-대상의 인벤토리를 없앤다<br>
+  /clear <대상> minecraft:아이템-대상의 인벤토리의 아이템을 없앤다<br>
+  /clear <대상> minecraft:아이템 <갯수>-대상의 인벤토리의 아이템 갯수를 없앤다<br>
+  <h2>team</h2>
 </body>
 </html>
